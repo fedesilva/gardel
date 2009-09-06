@@ -1,0 +1,57 @@
+
++ Dispatcher DSL
+    +OK get
+        + OK solo
+        + OK con view
+
+    + post 
+        + OK solo
+        + OK con view
+
+    + SiteBuilder
+    
+
++ Verificar que funcionen los filtros y el session
+    + simple demo login
+
++ Hacer un test equivalente a cada uno de los demos en demo app.
+    + Hay que hacer un TestRequestBuilder
+    + Pasar url -> chequear el resultado
+    + redir
+    + session
+    + headers
+    + cookies
+
++ Agregar default views para ciertos cosas como errores
++ Despues de filtrar si se dió un error intentar renderear con standard views.
+    + response builder: tomar un servletresponse y retornar un Response
+        para pasarle a los renderers.
+
++ Metodos hacer lookup en los sets del request como si fueran mapas.
+
+
+
+
++!!Integrar con ElCourier
+    + switchear ;)
+
+LATER
+
++ Testear dispatcher
+    + crear un request y pasarlo. chequear que sea el mismo.
+    + crear un request y agregarle un valor en un filtro. chequear que esta cambiado.
+    + crear un request y cancelar la ejecución. debe recibirse un response con 404.
+    + crear un request y cancelar la ejecución. debe recibirse un response con 501.
+
++ IMPORTANTE!!! Los views tienen que recibir el outputstream 
+        + para que puedan "estrimear" a gusto.
+
++ IMPORTANTE Aumentar request para agregar:
+        + InputStream
+
++ Session se va a clientData?
+
++ Hacer que el request builder sea un trait pluggeable
++ Hacer que el response extractor sea un trait pluggeable
+
+

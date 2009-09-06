@@ -1,0 +1,11 @@
+target
+ctags
+tmp
+lib_managed
+tags
+.vim$
+.class$
+.*\.orig$
+project/boot
+core/project/boot
+app/project/boot

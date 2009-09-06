@@ -1,0 +1,11 @@
+Tue Aug 18 15:57:40 UYT 2009
+src/main/scala/gardel/core/bootstrap/bootstrap.scala:  //FIXME real map
+src/main/scala/gardel/core/dispatcher/builder.scala: * FIXME build the DSL builder
+src/main/scala/gardel/core/dispatcher/builder.scala: * FIXME why queues? 
+src/main/scala/gardel/core/dispatcher/dispatcher.scala:   * FIXME Check and chain the response
+src/main/scala/gardel/core/dispatcher/dispatcher.scala:   * FIXME We need to ensure an exception stops processing but all filters must be undone. 
+src/main/scala/gardel/core/dispatcher/dispatcher.scala:    val filtered = beforeFilter(request) // FIXME Check for Exceptions
+src/main/scala/gardel/core/dispatcher/dispatcher.scala:   * FIXME Check raised exceptions, wrap in special EX containing rule that failed.
+src/main/scala/gardel/core/dispatcher/request.scala://FIXME make the empty constructors go away.
+src/main/scala/gardel/core/dispatcher/request.scala://FIXME create the copy operators
+src/main/scala/gardel/core/dispatcher/request.scala:// FIXME IMPLEMENT ClientData

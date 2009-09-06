@@ -1,0 +1,33 @@
+
++ Controller system
+    + OK implement construction of chains
+    + implement dispatching
+    + EDSL for filtering and dispatching
+        {{{ 
+           get( _ == "/index" ) {  (rq) => {
+                fetchSomething(rq)
+             }
+           }
+           post( _ match {
+                    case Request(XXX) => true
+                    case _ false
+            }) {  (rq) => alterSomething(rq)  }
+        }}}
+
+    + Add ability to map types 
+        Something like:
+        {{{
+            map( "/path/or/something/", classOf[Person] )
+        }}}
+
+        should match https methods with member functions of the type
+        should use structural typing
+        how to autoredir to views/representations? 
+                --> after processing look for package/type/view/verb ?
+
+
++ View system
+    + View Hierarchy
+
++ FormHelper
+
